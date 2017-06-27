@@ -5,10 +5,8 @@
 # Set AD9854 clock remap to 25 MHz
 export PATH=$PATH:/usr/local/bin
 
-set.ddsC 	CR	004F0041
-set.ddsC	FTW1	155555555555
-# pgm: next line not needed?
-set.ddsC	CR	004F0041
+set.ddsC 	CR	004C0041
+set.ddsC 	FTW1 	1AAAAAAAAAAA
 
 # Program AD9512 secondary clock to choose 25 MHz from the AD9854 remap
 set.clkdB	CSPD	02
